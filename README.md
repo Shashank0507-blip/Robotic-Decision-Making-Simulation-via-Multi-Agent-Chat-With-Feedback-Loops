@@ -5,14 +5,26 @@ The system showcases real-world inspired AI communication pipelines where agents
 
 ## **Key Features:**
 * **Multi-Agent System:**
-  Five independent AI agents collaborate through structured message passing.
+  * Five independent AI agents collaborate through structured message passing.
 * **Memory Simulation:**
-  A lightweight history mechanism stores and tracks interactions between agents for analysis and debugging.
+  * A lightweight history mechanism stores and tracks interactions between agents for analysis and debugging.
 * **Dynamic Feedback Loop:**
-  Agents adapt their plans based on feedback provided by other agents, simulating realistic AI behavior.
+  * Agents adapt their plans based on feedback provided by other agents, simulating realistic AI behavior.
 * **Summarization:**
-  After each task, a summarizer agent generates a debrief summarizing the mission's flow and outcomes.
+  * After each task, a summarizer agent generates a debrief summarizing the mission's flow and outcomes.
 * **Groq API Integration:**
-  Fast and efficient LLM responses using Groq's ultra-low-latency Llama-3.3-70B models.
+  * Fast and efficient LLM responses using Groq's ultra-low-latency Llama-3.3-70B models.
 * Robust Error Handling:
-  Try-except blocks ensure the system remains operational even if an API call fails or times out.
+  * Try-except blocks ensure the system remains operational even if an API call fails or times out.
+
+## **Agents Overview:**
+* **PerceptionAgent:**
+  * Observes the environment and reports critical information.
+* **PlannerAgent:**
+  * Develops an action plan based on perception inputs.
+* **ExecutorAgent:**
+  * Carries out the planned actions or strategies.
+* **DecisionAgent:**
+  * Reviews execution results and provides feedback for improvements.
+* **Summariser:**
+  * Summarizes the overall communication and decision flow for mission debriefing.
